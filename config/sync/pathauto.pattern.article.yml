@@ -1,0 +1,31 @@
+uuid: 475407a0-eeb6-4800-96c2-a154a116601e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: article
+label: article
+type: 'canonical_entities:node'
+pattern: '[current-page:title][node:field_category]'
+selection_criteria:
+  ce98b30a-9d96-4b65-b978-0f40c6024425:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: ce98b30a-9d96-4b65-b978-0f40c6024425
+  872c40d2-6a39-483f-9461-f51ec47a1244:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 872c40d2-6a39-483f-9461-f51ec47a1244
+selection_logic: and
+weight: -5
+relationships: {  }

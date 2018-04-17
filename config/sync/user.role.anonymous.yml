@@ -9,6 +9,7 @@ label: anonimo
 weight: 0
 is_admin: false
 permissions:
+  - 'View published Path file entity entities'
   - 'access administration pages'
   - 'access comments'
   - 'access content'
